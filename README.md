@@ -17,6 +17,7 @@ Make sure you have the following installed:
 
 1. **Clone the repository to your local machine:**
 
+  
 
 2. **Create a virtual environment (optional but recommended):**
 
@@ -35,4 +36,27 @@ Make sure you have the following installed:
     - For macOS/Linux:
 
         ```bash
-      
+        source venv/bin/activate
+        ```
+
+4. **Install project dependencies:**
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+### Running the API
+
+1. **Start the API server:**
+
+    ```bash
+    python app.py
+    ```
+
+2. **Open your web browser and navigate to [http://127.0.0.1:5000/](http://127.0.0.1:5000/) to access the API documentation.**
+
+## API Usage
+
+- Send a POST request to the `/classify` endpoint with an image file attached.
+- The API will respond with the predicted class label and probability.
+
